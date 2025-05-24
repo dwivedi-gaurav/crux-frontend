@@ -14,11 +14,11 @@ import {
   TableCell,
   Paper,
   CircularProgress,
-  Box,
 } from "@mui/material";
 
 type CruxResult = {
   url: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   data?: any;
   error?: string;
 };
@@ -49,7 +49,7 @@ export default function CruxDashboard() {
       });
       setResults(response.data);
     } catch (error) {
-      alert("Failed to fetch CrUX data");
+      alert(`Failed to fetch CrUX data: ${error}`);
     }
 
     setLoading(false);
