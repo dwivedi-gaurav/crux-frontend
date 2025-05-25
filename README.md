@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CrUX Dashboard
+
+A web application that allows users to analyze webpage performance metrics using Google's Chrome User Experience Report (CrUX) data. The application is deployed at [https://crux-frontend-flame.vercel.app/](https://crux-frontend-flame.vercel.app/)
+
+## Features
+
+- Input multiple URLs to analyze their performance metrics
+- View key Core Web Vitals metrics:
+  - Largest Contentful Paint (LCP)
+  - First Contentful Paint (FCP)
+  - Cumulative Layout Shift (CLS)
+  - Interaction to Next Paint (INP)
+  - Time to First Byte (TTFB)
+- Sort and filter results
+- Toggle visibility of specific metrics
+- Filter by URLs
+- Hide error results
+
+## Application Flow
+
+```mermaid
+graph TD
+    A[User Input] -->|Enter URLs| B[URL Validation]
+    B -->|Valid URLs| C[Fetch CrUX Data]
+    B -->|Invalid URLs| D[Show Error]
+    C -->|API Response| E[Process Results]
+    E -->|Display Data| F[Data Table]
+    F -->|User Interaction| G[Sort/Filter]
+    G -->|Update View| F
+```
+
+## Tech Stack
+
+- **Frontend**: Next.js with TypeScript
+- **UI Components**: Material-UI (MUI)
+- **Deployment**: Vercel
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/crux-dashboard.git
+cd crux-dashboard
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Enter one or more URLs in the text area (one URL per line)
+2. Click "Fetch CrUX Data" to retrieve performance metrics
+3. Use the filters to:
+   - Toggle specific metrics
+   - Sort by different metrics
+   - Filter by URLs
+   - Hide error results
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the LICENSE file for details.
