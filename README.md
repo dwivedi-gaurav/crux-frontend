@@ -2,6 +2,8 @@
 
 A web application that allows users to analyze webpage performance metrics using Google's Chrome User Experience Report (CrUX) data. The application is deployed at [https://crux-frontend-flame.vercel.app/](https://crux-frontend-flame.vercel.app/)
 
+Backed Repo [https://github.com/dwivedi-gaurav/crux-frontend](https://github.com/dwivedi-gaurav/crux-frontend)
+
 ## Features
 
 - Input multiple URLs to analyze their performance metrics
@@ -31,9 +33,9 @@ graph TD
 
 ## Tech Stack
 
-- **Frontend**: Next.js with TypeScript
-- **UI Components**: Material-UI (MUI)
-- **Deployment**: Vercel
+- Next.js
+- TypeScript
+- Material-UI (MUI)
 
 ## Getting Started
 
