@@ -47,8 +47,8 @@ graph TD
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/crux-dashboard.git
-cd crux-dashboard
+git clone https://github.com/dwivedi-gaurav/crux-frontend.git
+cd crux-frontend
 ```
 
 2. Install dependencies:
