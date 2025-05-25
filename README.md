@@ -13,7 +13,7 @@ Backed Repo [https://github.com/dwivedi-gaurav/crux-frontend](https://github.com
   - Cumulative Layout Shift (CLS)
   - Interaction to Next Paint (INP)
   - Time to First Byte (TTFB)
-- Sort and filter results
+- Sort and filter results (Hover over the header to see the sort icon)
 - Toggle visibility of specific metrics
 - Filter by URLs
 - Hide error results
