@@ -2,7 +2,7 @@
 
 A web application that allows users to analyze webpage performance metrics using Google's Chrome User Experience Report (CrUX) data. The application is deployed at [https://crux-frontend-flame.vercel.app/](https://crux-frontend-flame.vercel.app/)
 
-Backed Repo [https://github.com/dwivedi-gaurav/crux-frontend](https://github.com/dwivedi-gaurav/crux-frontend)
+Backend Repo [https://github.com/dwivedi-gaurav/crux-frontend](https://github.com/dwivedi-gaurav/crux-frontend)
 
 ## Features
 
